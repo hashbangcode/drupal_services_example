@@ -1,0 +1,5 @@
+name: 'Drupal Services Examples'
+type: module
+description: 'A set of examples of Drupal services in action.'
+package: Example
+core_version_requirement: ^10 || ^11
