@@ -20,3 +20,7 @@ don't need to be defined.
 ## Services Controller Example
 
 Shows how services are injected into a controller.
+
+## Services Decorator Example
+
+Shows a service being overridden by the decorator property.

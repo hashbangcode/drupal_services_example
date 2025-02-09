@@ -1,0 +1,4 @@
+services:
+  services_decorator_example.decorated_json:
+    class: \Drupal\services_decorator_example\DecoratedJson
+    decorates: serialization.json
