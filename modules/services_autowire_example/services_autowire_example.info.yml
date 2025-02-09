@@ -1,6 +1,6 @@
-name: 'Services Argument Example'
+name: 'Services Autowire Example'
 type: module
-description: 'Passing arguments to services.'
+description: 'Using the autowire system to automatically pass arguments to services.'
 package: Example
 core_version_requirement: ^10 || ^11
 dependencies:
