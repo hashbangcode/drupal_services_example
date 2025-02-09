@@ -1,0 +1,6 @@
+services:
+  services_autowire_example.autowire_example:
+    class: \Drupal\services_autowire_example\AutowireExample
+    autowire: true
+
+  Drupal\Component\Serialization\SerializationInterface: '@serialization.json'
