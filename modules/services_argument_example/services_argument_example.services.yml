@@ -2,10 +2,3 @@ services:
   services_argument_example.single_argument:
     class: \Drupal\services_argument_example\SingleArgument
     arguments: ['@serialization.json']
-
-# uuid?
-  # state
-
- #parent argumen
-
-  #decorates
