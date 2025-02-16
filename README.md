@@ -38,3 +38,8 @@ Shows a service being created for use within Drush.
 Shows how multiple services can accept arguments set in a parent service. Also,
 this shows the `abstract` keyword in use since the parent service is made as a
 service that can't be used.
+
+## Services Alias Example
+
+An example of how to alias a service so that it can be called in using different
+names.
