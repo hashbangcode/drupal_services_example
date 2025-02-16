@@ -1,0 +1,7 @@
+name: 'Services Alias Example'
+type: module
+description: 'An example of aliasing services.'
+package: Example
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal_services_examples:drupal_services_examples

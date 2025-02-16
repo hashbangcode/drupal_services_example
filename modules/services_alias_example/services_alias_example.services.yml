@@ -1,0 +1,6 @@
+services:
+  services_alias_example.simple_service:
+    class: \Drupal\services_alias_example\SimpleService
+
+  simple_aliased_service:
+    alias: services_alias_example.simple_service
