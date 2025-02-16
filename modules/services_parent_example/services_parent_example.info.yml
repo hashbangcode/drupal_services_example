@@ -1,0 +1,7 @@
+name: 'Services Parent Example'
+type: module
+description: 'Shows the abstract and parent service definitions in action.'
+package: Example
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal_services_examples:drupal_services_examples

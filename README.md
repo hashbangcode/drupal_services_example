@@ -31,4 +31,10 @@ Shows how services are injected into a plugin.
 
 ## Services Drush Example
 
-Show a service being created for use within Drush.
+Shows a service being created for use within Drush.
+
+## Services Parent Example
+
+Shows how multiple services can accept arguments set in a parent service. Also,
+this shows the `abstract` keyword in use since the parent service is made as a
+service that can't be used.

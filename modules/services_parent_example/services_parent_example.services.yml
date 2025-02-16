@@ -1,0 +1,12 @@
+services:
+  services_parent_example.base_service:
+    abstract: true
+    arguments: ['@password_generator']
+
+  services_parent_example.generate_12_character_password:
+    class: \Drupal\services_parent_example\Generate12CharacterPassword
+    parent: services_parent_example.base_service
+
+  services_parent_example.generate_20_character_password:
+    class: \Drupal\services_parent_example\Generate20CharacterPassword
+    parent: services_parent_example.base_service

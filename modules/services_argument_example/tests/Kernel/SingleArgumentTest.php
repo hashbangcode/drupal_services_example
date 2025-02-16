@@ -22,7 +22,7 @@ class SingleArgumentTest extends KernelTestBase {
    * Test that the generated password is 12 characters long.
    */
   public function testSimpleService() {
-    /** @var \Drupal\services_argument_example\SingleArgument $simpleService */
+    /** @var \Drupal\services_argument_example\SingleArgument $argumentService */
     $argumentService = \Drupal::service('services_argument_example.single_argument');
     $this->assertTrue(strlen($argumentService->generate12CharacterPassword()) === 12);
   }
