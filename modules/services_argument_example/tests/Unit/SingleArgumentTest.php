@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\Tests\services_argument_example\Unit;
 
-use Drupal\Component\Serialization\Json;
+use Drupal\Core\Password\DefaultPasswordGenerator;
 use Drupal\services_argument_example\SingleArgument;
 use Drupal\Tests\UnitTestCase;
 
@@ -12,16 +14,11 @@ use Drupal\Tests\UnitTestCase;
 class SingleArgumentTest extends UnitTestCase {
 
   /**
-   * Test that removeItemFromPayload removes an item from the payload.
+   * Test that the generated password is 12 characters long.
    */
   public function testSimpleService() {
-    $payload = '{"0":{"id":1},"1":{"id":2},"2":{"id":3}}';
-    $id = 2;
-
-    $result = '{"0":{"id":1},"2":{"id":3}}';
-
-    $argumentService = new SingleArgument(new Json());
-    $this->assertEquals($result, $argumentService->removeItemFromPayload($payload, $id));
+    $argumentService = new SingleArgument(new DefaultPasswordGenerator());
+    $this->assertTrue(strlen($argumentService->generate12CharacterPassword()) === 12);
   }
 
 }

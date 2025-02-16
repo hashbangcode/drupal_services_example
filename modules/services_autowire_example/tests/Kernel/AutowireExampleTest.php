@@ -17,17 +17,12 @@ class AutowireExampleTest extends KernelTestBase {
   ];
 
   /**
-   * Test that the getArray method returns an array.
+   * Test that the generatePassword() method generates a 12 character password.
    */
   public function testSimpleService() {
-    $payload = '{"0":{"id":1},"1":{"id":2},"2":{"id":3}}';
-    $id = 2;
-
-    $result = '{"0":{"id":1},"2":{"id":3}}';
-
     /** @var \Drupal\services_autowire_example\AutowireExample $simpleService */
     $argumentService = \Drupal::service('services_autowire_example.autowire_example');
-    $this->assertEquals($result, $argumentService->removeItemFromPayload($payload, $id));
+    $this->assertTrue(strlen($argumentService->generate12CharacterPassword()) === 12);
   }
 
 }

@@ -24,3 +24,11 @@ Shows how services are injected into a controller.
 ## Services Decorator Example
 
 Shows a service being overridden by the decorator property.
+
+## Services Plugin Example
+
+Shows how services are injected into a plugin.
+
+## Services Drush Example
+
+Show a service being created for use within Drush.

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\Tests\services_simple_example\Unit;
 
 use Drupal\services_simple_example\SimpleService;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\Tests\services_argument_example\Kernel;
 
 use Drupal\KernelTests\KernelTestBase;
@@ -17,17 +19,12 @@ class SingleArgumentTest extends KernelTestBase {
   ];
 
   /**
-   * Test that the getArray method returns an array.
+   * Test that the generated password is 12 characters long.
    */
   public function testSimpleService() {
-    $payload = '{"0":{"id":1},"1":{"id":2},"2":{"id":3}}';
-    $id = 2;
-
-    $result = '{"0":{"id":1},"2":{"id":3}}';
-
     /** @var \Drupal\services_argument_example\SingleArgument $simpleService */
     $argumentService = \Drupal::service('services_argument_example.single_argument');
-    $this->assertEquals($result, $argumentService->removeItemFromPayload($payload, $id));
+    $this->assertTrue(strlen($argumentService->generate12CharacterPassword()) === 12);
   }
 
 }

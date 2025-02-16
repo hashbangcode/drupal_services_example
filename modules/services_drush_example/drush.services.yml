@@ -1,0 +1,6 @@
+services:
+  services_drush_example.drush_example_commands:
+    class: \Drupal\services_drush_example\Commands\DrushExampleCommands
+    arguments: ['@password_generator']
+    tags:
+      - { name: drush.command }

@@ -1,23 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\services_argument_example;
 
 /**
- * Interface for the SimpleService service.
+ * Interface for the SingleArgument service.
  */
 interface SingleArgumentInterface {
 
   /**
-   * Removes an item from a payload.
-   *
-   * @param string $payload
-   *   The payload to alter.
-   * @param int $id
-   *   The ID to remove from the payload.
+   * Generates a password 12 characters long.
    *
    * @return string
    *   The resulting payload string.
    */
-  public function removeItemFromPayload(string $payload, int $id):string;
+  public function generate12CharacterPassword():string;
 
 }
