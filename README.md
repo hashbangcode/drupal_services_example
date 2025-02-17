@@ -43,3 +43,17 @@ service that can't be used.
 
 An example of how to alias a service so that it can be called in using different
 names.
+
+## Services Lazy Example
+
+Using the lazy keyword to load a service in a performant way.
+
+Note that the proxy class here was generated using the following command
+(on ddev).
+
+`ddev exec php web/core/scripts/generate-proxy-class.php
+'Drupal\\services_lazy_example\\SingleArgument'
+"web/modules/custom/drupal_services_examples/modules/services_lazy_example/src"`
+
+
+The __module also needs to be installed__ for this command to work.

@@ -1,0 +1,5 @@
+services:
+  services_lazy_example.single_argument:
+    class: \Drupal\services_lazy_example\SingleArgument
+    arguments: ['@password_generator']
+    lazy: true
