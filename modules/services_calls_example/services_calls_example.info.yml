@@ -1,0 +1,7 @@
+name: 'Services Calls Example'
+type: module
+description: 'An example of using the calls setting in a service definition.'
+package: Example
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal_services_examples:drupal_services_examples

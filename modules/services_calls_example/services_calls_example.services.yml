@@ -1,0 +1,5 @@
+services:
+  services_calls_example.calls_example:
+    class: Drupal\services_calls_example\CallsExample
+    calls:
+      - [setPasswordGenerator, ['@password_generator']]

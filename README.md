@@ -55,5 +55,9 @@ Note that the proxy class here was generated using the following command
 'Drupal\\services_lazy_example\\SingleArgument'
 "web/modules/custom/drupal_services_examples/modules/services_lazy_example/src"`
 
-
 The __module also needs to be installed__ for this command to work.
+
+## Services Calls Example
+
+An example of using the `calls` directive to side inject a dependency into a
+service.
