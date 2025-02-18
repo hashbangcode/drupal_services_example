@@ -61,3 +61,8 @@ The __module also needs to be installed__ for this command to work.
 
 An example of using the `calls` directive to side inject a dependency into a
 service.
+
+## Services Autoconfigured Service
+
+An example of using the `autoconfigure: true` directive to automatically
+configure a service class.

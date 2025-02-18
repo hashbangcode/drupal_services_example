@@ -1,0 +1,6 @@
+services:
+  _defaults:
+    autoconfigure: true
+  services_autoconfigure_example.autoconfigured_service:
+    class: \Drupal\services_autoconfigure_example\EventSubscriber\AutoconfiguredService
+    arguments: ['@messenger']

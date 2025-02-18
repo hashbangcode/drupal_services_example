@@ -7,7 +7,7 @@ namespace Drupal\services_decorator_example;
 use Drupal\Core\Password\DefaultPasswordGenerator;
 
 /**
- * Decorates the Json class.
+ * Decorates the DefaultPasswordGenerator class.
  */
 class DecoratedPasswordGenerator extends DefaultPasswordGenerator {
 
