@@ -66,3 +66,7 @@ service.
 
 An example of using the `autoconfigure: true` directive to automatically
 configure a service class.
+
+## Services Hooks Example
+
+An example of using service hook classes to run hooks.
