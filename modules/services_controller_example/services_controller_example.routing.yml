@@ -2,7 +2,7 @@ services_controller_example:
   path: '/drupal-services-examples/services-controller-example'
   defaults:
     _controller: '\Drupal\services_controller_example\Controller\ControllerExample::respond'
-    _title: 'Get Joke'
+    _title: 'Respond'
   requirements:
     # This page is available to all users.
     _access: 'TRUE'
