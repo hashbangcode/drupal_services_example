@@ -21,11 +21,16 @@ class NodeHooksTest extends UnitTestCase {
     // We create a mock of the node as we don't want to invoke the insert hook
     // until we are ready to do so.
     $node = $this->createMock(Node::class);
+    $node->expects($this->any())
+      ->method('getTitle')
+      ->willReturn('qwerty');
 
     // Create a mock of the messenger service and ensure that the addStatus
     // method is invoked once.
     $messenger = $this->createMock(MessengerInterface::class);
-    $messenger->expects($this->once())->method('addStatus');
+    $messenger->expects($this->once())
+      ->method('addStatus')
+      ->with('Services Hooks Example: Node qwerty created.');
 
     $nodeHooksService = new NodeHooks($messenger);
     $nodeHooksService->nodeInsert($node);

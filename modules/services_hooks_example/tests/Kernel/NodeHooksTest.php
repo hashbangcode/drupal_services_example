@@ -7,14 +7,11 @@ namespace Drupal\Tests\services_hook_example\Kernel;
 use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\KernelTests\KernelTestBase;
 use Drupal\node\Entity\Node;
-use Drupal\Tests\node\Traits\NodeCreationTrait;
 
 /**
  * Kernel tests for the NodeHooks service.
  */
 class NodeHooksTest extends KernelTestBase {
-
-  use NodeCreationTrait;
 
   /**
    * {@inheritdoc}
