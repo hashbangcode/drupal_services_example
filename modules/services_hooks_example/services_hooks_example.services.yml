@@ -2,3 +2,7 @@ services:
   services_hooks_example.node_hooks:
     class: \Drupal\services_hooks_example\Hook\NodeHooks
     autowire: true
+
+  services_hooks_example.custom_hook:
+    class: \Drupal\services_hooks_example\CustomHook
+    autowire: true

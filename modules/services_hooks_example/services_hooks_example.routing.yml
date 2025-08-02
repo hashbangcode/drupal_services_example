@@ -1,0 +1,8 @@
+services_hooks_example:
+  path: '/drupal-services-examples/services-hooks-example'
+  defaults:
+    _controller: '\Drupal\services_hooks_example\Controller\CustomHookExample::listItems'
+    _title: 'List Items'
+  requirements:
+    # This page is available to all users.
+    _access: 'TRUE'
