@@ -70,3 +70,8 @@ configure a service class.
 ## Services Hooks Example
 
 An example of using service hook classes to run hooks.
+
+Also includes an example of creating a custom hook that is then implemented by
+a service hook class. The custom hook is called `hook_example_get_items`. Turn
+on the module and visit the path at
+`\drupal-services-examples/services-hooks-example` to see the hook in action.
