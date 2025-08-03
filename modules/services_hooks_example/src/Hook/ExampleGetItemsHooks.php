@@ -15,8 +15,8 @@ class ExampleGetItemsHooks {
   /**
    * Implements hook_example_get_items().
    */
-  public function getItems($existingItems) {
-    return array_merge($existingItems, ['one', 'two', 'three']);
+  public function getItems() {
+    return ['one', 'two', 'three'];
   }
 
 }

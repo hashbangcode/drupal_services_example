@@ -24,7 +24,7 @@ class CustomHook implements CustomHookInterface {
    * {@inheritdoc}
    */
   public function getItems():array {
-    $items = $this->moduleHandler->invokeAll('example_get_items', [[]]);
+    $items = $this->moduleHandler->invokeAll('example_get_items');
     sort($items);
     return $items;
   }
