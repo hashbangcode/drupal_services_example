@@ -10,7 +10,7 @@ namespace Drupal\services_hooks_example;
 interface CustomHookInterface {
 
   /**
-   * Invokes the example_get_items hook and returns a list of items found.
+   * Invokes the hook_example_get_items hook and returns a list of items found.
    *
    * @return array
    *   The list of items found.
