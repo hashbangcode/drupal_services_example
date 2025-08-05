@@ -1,4 +1,8 @@
 services:
+  # Added named service hook for testing purposes.
+  # This service isn't required for Drupal to find the hooks, but we need it
+  # because we want to use it as a named service within the kernel test to
+  # explicitly reference the hook methods.
   services_hooks_example.node_hooks:
     class: \Drupal\services_hooks_example\Hook\NodeHooks
     autowire: true
